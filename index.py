@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from flask_sslify import SSLify
 from birdy.twitter import UserClient
 import time
 import os
@@ -17,6 +18,7 @@ client = UserClient(os.environ['CONSUMER_KEY'],
                     os.environ['ACCESS_TOKEN'],
                     os.environ['ACCESS_TOKEN_SECRET'])
 app = Flask(__name__)
+sslify = SSLify(app, permanent=True)
 
 
 @app.route('/')

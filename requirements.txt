@@ -1,8 +1,9 @@
 Flask==0.10.1
+Flask-SSLify==0.1.4
 Jinja2==2.7.3
 MarkupSafe==0.23
 Werkzeug==0.9.6
+birdy==0.2
 gunicorn==19.1.1
 itsdangerous==0.24
 requests==2.4.3
-birdy==0.2
