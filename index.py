@@ -62,8 +62,5 @@ def show_cite():
 
 
 if __name__ == '__main__':
-    if 'ON_HEROKU' in os.environ:
-        app.debug = False
-    else:
-        app.debug = True
+    app.debug = False
     app.run(host = 'localhost', port = 5000)
