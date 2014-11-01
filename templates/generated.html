@@ -1,0 +1,20 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+<p class="lead">MLA citation for <a href="https://twitter.com/{{ screen_name }}/status/{{ id }}">this</a> tweet from {{ name }}.</p>
+
+<hr>
+
+<p>
+    {{ name }}
+    ({{ screen_name }}).
+    "{{ text }}"
+    {{ date }}.
+    Tweet.
+</p>
+
+<hr>
+
+<blockquote class="twitter-tweet hidden"><a href="https://twitter.com/{{ screen_name }}/status/{{ id }}"></a></blockquote>
+{% endblock %}

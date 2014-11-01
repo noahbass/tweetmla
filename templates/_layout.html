@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>tweetmla</title>
+        <meta name="description" content="Generate a citation in the mla format for a tweet.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style>iframe { width: 100% !important; }</style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <br>
+
+                    <ul class="nav nav-pills" role="navigation">
+                        <li class="active"><a href="//tweetmla.noahbass.com/">tweetmla</a></li>
+                        <li><a href="//youtubemla.noahbass.com/">youtubemla</a></li>
+                    </ul>
+
+                    <h1><a href="/">tweetmla</a></h1>
+
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <script src="//platform.twitter.com/widgets.js"></script>
+        <script>!function(t,w,i,T,m,l,a){t.GoogleAnalyticsObject=m,t[m]=t[m]||function(){(t[m].q=t[m].q||[]).push(arguments)},t[m].l=+new Date,l=w.createElement(i),a=w.getElementsByTagName(i)[0],l.src=T,a.parentNode.insertBefore(l,a)}(this,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-41393710-1");ga("send","pageview");</script>
+    </body>
+</html>

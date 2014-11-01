@@ -1,0 +1,22 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+<p class="lead">Generate a citation in the mla format for a tweet.</p>
+
+<form method="POST" action="/citation">
+    <label for="url">Tweet URL</label>
+    <input type="text" class="form-control" id="url" name="url" placeholder="Paste url here...">
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="company"> Author is company or organization, not a person
+        </label>
+    </div>
+
+    <button class="btn btn-default" type="submit">Get Citation</button>
+</form>
+
+<br>
+
+<p>example input: https://twitter.com/virgingalactic/status/528233343599394817</p>
+{% endblock %}
