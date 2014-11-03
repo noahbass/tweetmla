@@ -1,4 +1,4 @@
-youtubemla
+[tweetmla](https://tweetmla.noahbass.com/)
 
 Generate a citation in the mla format for a tweet.
 
